@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#想到哪写到哪的scrapy日记 1 懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 ##先记一下环境吧。 python 3.5.2scrapy 1.4当然，是开了virtualenv ##首先是建立项目。 &amp;gt; scrapy startproject tutoria">
+<meta name="description" content="想到哪写到哪的scrapy日记 1懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 先记一下环境吧。python 3.5.2scrapy 1.4当然，是开了virtualenv 首先是建立项目。&amp;gt; scrapy startproject tutorial 该命令在当前">
 <meta name="keywords" content="scrapy,python,crawler">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learn some scrapy (1)">
 <meta property="og:url" content="http://FayeTitus.com/2017/10/12/learn-some-scrapy-1/index.html">
 <meta property="og:site_name" content="FayeTitus and Something">
-<meta property="og:description" content="#想到哪写到哪的scrapy日记 1 懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 ##先记一下环境吧。 python 3.5.2scrapy 1.4当然，是开了virtualenv ##首先是建立项目。 &amp;gt; scrapy startproject tutoria">
+<meta property="og:description" content="想到哪写到哪的scrapy日记 1懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 先记一下环境吧。python 3.5.2scrapy 1.4当然，是开了virtualenv 首先是建立项目。&amp;gt; scrapy startproject tutorial 该命令在当前">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-13T05:53:42.012Z">
+<meta property="og:updated_time" content="2017-10-13T06:46:05.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learn some scrapy (1)">
-<meta name="twitter:description" content="#想到哪写到哪的scrapy日记 1 懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 ##先记一下环境吧。 python 3.5.2scrapy 1.4当然，是开了virtualenv ##首先是建立项目。 &amp;gt; scrapy startproject tutoria">
+<meta name="twitter:description" content="想到哪写到哪的scrapy日记 1懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。 先记一下环境吧。python 3.5.2scrapy 1.4当然，是开了virtualenv 首先是建立项目。&amp;gt; scrapy startproject tutorial 该命令在当前">
 
 
 
@@ -300,17 +300,13 @@
       
 
       
-        <p>#想到哪写到哪的scrapy日记 1</p>
-<p>懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。<br>这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。</p>
-<p>##先记一下环境吧。</p>
-<p>python 3.5.2<br>scrapy 1.4<br>当然，是开了virtualenv</p>
-<p>##首先是建立项目。</p>
-<p><code>&gt; scrapy startproject tutorial</code></p>
+        <h1 id="想到哪写到哪的scrapy日记-1"><a href="#想到哪写到哪的scrapy日记-1" class="headerlink" title="想到哪写到哪的scrapy日记 1"></a>想到哪写到哪的scrapy日记 1</h1><p>懒得说前因后果，总之，小葵花妈妈scrapy课堂开课了。<br>这个玩意儿吧，嗯，大面积来源自1.4版本的官方文档。不过该版本的文档在此时尚未有zh-CN，所以嘛，有所偏差在所难免。</p>
+<h2 id="先记一下环境吧。"><a href="#先记一下环境吧。" class="headerlink" title="先记一下环境吧。"></a>先记一下环境吧。</h2><p>python 3.5.2<br>scrapy 1.4<br>当然，是开了virtualenv</p>
+<h2 id="首先是建立项目。"><a href="#首先是建立项目。" class="headerlink" title="首先是建立项目。"></a>首先是建立项目。</h2><p><code>&gt; scrapy startproject tutorial</code></p>
 <p>该命令在当前目录下建立tutorial项目</p>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">tutorial/</div><div class="line">    scrapy.cfg            <span class="comment"># deploy configuration file</span></div><div class="line"></div><div class="line">    tutorial/             <span class="comment"># project's Python module, you'll import your code from here</span></div><div class="line">        __init__.py</div><div class="line"></div><div class="line">        <span class="keyword">items</span>.py          <span class="comment"># project items definition file</span></div><div class="line"></div><div class="line">        pipelines.py      <span class="comment"># project pipelines file</span></div><div class="line"></div><div class="line">        settings.py       <span class="comment"># project settings file</span></div><div class="line"></div><div class="line">        spiders/          <span class="comment"># a directory where you'll later put your spiders</span></div><div class="line">            __init__.py</div></pre></td></tr></table></figure>
 <p>ok，没有踩到什么奇怪的坑。那么，上面这就是项目生成后的目录结构。</p>
-<p>##先试试tutorial吧！</p>
-<p>总之，先上tutorial的代码！</p>
+<h2 id="先试试tutorial吧！"><a href="#先试试tutorial吧！" class="headerlink" title="先试试tutorial吧！"></a>先试试tutorial吧！</h2><p>总之，先上tutorial的代码！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line"></div><div class="line">    def start_requests(self):</div><div class="line">        urls = [</div><div class="line">            &apos;http://quotes.toscrape.com/page/1/&apos;,</div><div class="line">            &apos;http://quotes.toscrape.com/page/2/&apos;,</div><div class="line">        ]</div><div class="line">        for url in urls:</div><div class="line">            yield scrapy.Request(url=url, callback=self.parse)</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        page = response.url.split(&quot;/&quot;)[-2]</div><div class="line">        filename = &apos;quotes-%s.html&apos; % page</div><div class="line">        with open(filename, &apos;wb&apos;) as f:</div><div class="line">            f.write(response.body)</div><div class="line">        self.log(&apos;Saved file %s&apos; % filename)</div></pre></td></tr></table></figure>
 <p>呼呼，单就目前来看，在scrapy中，每一个spider都应当是写做一个类。<br>这个spider类继承自scrapy.Spider类，它最起码要做这样一些事情：</p>
 <ul>
@@ -319,11 +315,10 @@
 <li>你还可以写写怎样解析下载来的页面数据，在这里是parse()这个方法，它就是简单地保存了所爬取到的页面信息。每次请求发出后所下载的response都由parse()处理，它的response参数是一个TextResponse实例。</li>
 </ul>
 <p>总之，这就是tutorial爬虫。虽然很多原理暂时不清不楚，但它已经可以被运行了！</p>
-<p>###运行tutorial spider</p>
-<p>很简单，跑到项目的top level目录下运行</p>
+<h3 id="运行tutorial-spider"><a href="#运行tutorial-spider" class="headerlink" title="运行tutorial spider"></a>运行tutorial spider</h3><p>很简单，跑到项目的top level目录下运行</p>
 <p><code>scrapy crawl quotes</code></p>
 <p>这条命令会运行我们刚刚写的那只name=”quotes”爬虫。<br>现在，检查一下当前目录，应该能看见俩新的文件：quotes-1.html和quotes-2.html。<br>如果没有，请自行debug。</p>
-<p>##在这之中都发生了什么？<br>歇一会儿再说。</p>
+<h2 id="在这之中都发生了什么？"><a href="#在这之中都发生了什么？" class="headerlink" title="在这之中都发生了什么？"></a>在这之中都发生了什么？</h2><p>歇一会儿再说。</p>
 
       
     </div>
@@ -402,8 +397,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -456,6 +460,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#想到哪写到哪的scrapy日记-1"><span class="nav-number">1.</span> <span class="nav-text">想到哪写到哪的scrapy日记 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#先记一下环境吧。"><span class="nav-number">1.1.</span> <span class="nav-text">先记一下环境吧。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首先是建立项目。"><span class="nav-number">1.2.</span> <span class="nav-text">首先是建立项目。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先试试tutorial吧！"><span class="nav-number">1.3.</span> <span class="nav-text">先试试tutorial吧！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#运行tutorial-spider"><span class="nav-number">1.3.1.</span> <span class="nav-text">运行tutorial spider</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在这之中都发生了什么？"><span class="nav-number">1.4.</span> <span class="nav-text">在这之中都发生了什么？</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
